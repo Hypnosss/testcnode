@@ -60,7 +60,8 @@ export default {
                 this.posts = res.data.data;
             }).catch(function(err){
                 console.log(err);
-            })
+            });
+            window.scrollTop = 0;
         },
         renderList(value){
             this.postPage = value;
